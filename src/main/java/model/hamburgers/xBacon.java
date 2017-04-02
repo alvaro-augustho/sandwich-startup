@@ -11,7 +11,7 @@ import model.ingredients.Queijo;
  */
 public class xBacon extends Hamburger {
 
-    private Ingredient[] listOfIngredients = new Ingredient[]{
+    private Ingredient[] listOfIngredients   = new Ingredient[]{
             new Bacon(), new HamburguerCarne(), new Queijo()
     };
 

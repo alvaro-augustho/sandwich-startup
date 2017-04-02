@@ -1,6 +1,7 @@
 package controller;
 
 import org.jboss.resteasy.annotations.GZIP;
+import service.MainService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -11,12 +12,14 @@ import javax.ws.rs.core.Response;
 @Path("/menu")
 public class MainController {
 
+    private MainService mainService = new MainService();
+
     @GET
     @Path("/list")
     @GZIP
     public Response menuListController() {
 
-        String result = "menu list";
+        String result = mainService.menuListService();
 
         return Response.status(200).entity(result).build();
 

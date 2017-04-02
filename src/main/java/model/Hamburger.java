@@ -7,7 +7,7 @@ import java.util.List;
  */
 public abstract class Hamburger {
 
-    Ingredient[] listOfIngredients;
+    private transient Ingredient[] listOfIngredients;
 
     public Ingredient[] getIngredients() {
         return this.listOfIngredients;
