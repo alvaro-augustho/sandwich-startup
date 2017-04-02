@@ -18,22 +18,16 @@ public class MainController {
     @Path("/list")
     @GZIP
     public Response menuListController() {
-
         String result = mainService.menuListService();
-
         return Response.status(200).entity(result).build();
-
     }
 
     @GET
     @Path("/ingredients/list")
     @GZIP
     public Response ingredientsListController() {
-
-        String result = "ingredients list";
-
+        String result = mainService.ingredientsListService();
         return Response.status(200).entity(result).build();
-
     }
 
     @POST
