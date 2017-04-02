@@ -1,13 +1,22 @@
 package model;
 
-import java.util.List;
+import com.google.gson.annotations.SerializedName;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * Created by aaugustho on 01/04/17.
  */
-public abstract class Hamburger {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Hamburger {
 
-    private transient Ingredient[] listOfIngredients;
+    @JsonProperty("description")
+    private String description;
+
+    @JsonProperty("listOfIngredients")
+    private Ingredient[] listOfIngredients;
+
+    public String getDescription() { return this.description; }
 
     public Ingredient[] getIngredients() {
         return this.listOfIngredients;

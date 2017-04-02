@@ -1,5 +1,6 @@
 package model.ingredients;
 
+import com.google.gson.annotations.SerializedName;
 import model.Ingredient;
 
 /**
@@ -7,7 +8,10 @@ import model.Ingredient;
  */
 public class HamburguerCarne extends Ingredient {
 
+    @SerializedName("description")
     private String description = "hambúrguer de carne";
+
+    @SerializedName("price")
     private float price = 3.00f;
 
 }
