@@ -1,0 +1,77 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #AfAfAf;
+}
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: white;
+  color: #8DC127;
+}
+.navbar-inverse {
+  background: #8DC127;
+  color: white;
+  font-weight: bold;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background: #8DC127;
+  color: white;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #8DC127;
+  color: white;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #8DC127;
+  color: white;
+}
+.navbar-inverse .navbar-nav > .open > a {
+  background: #8DC127;
+  color: white;
+}
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background: #8DC127;
+  color: white;
+}
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background: #8DC127;
+  color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+address {
+  color: #0f0f0f;
+  font-size: 80%;
+  margin: 0px;
+}
+body {
+  align: center;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+.tab-content {
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding: 10px;
+}
+.affix {
+  top: 100px;
+}
+#carouselButtons {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
