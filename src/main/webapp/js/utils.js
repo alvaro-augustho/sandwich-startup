@@ -24,7 +24,7 @@ var utils = {
                 '</div>'+
                 '<div class="media-body">'+
                 '<h2 class="media-heading hamburguer-description">'+data[i].description+'</h2>'+
-                '<p>Ingredients</p>'+
+                '<p>'+this.buildHamburgersIngredientsList(data[i].listOfIngredients)+'</p>'+
                 '</div>'+
                 '</div>'+
                 '</div>';
@@ -34,6 +34,15 @@ var utils = {
         html += "</div>";
 
         return html;
+    },
+
+    buildHamburgersIngredientsList(listOfIngredients) {
+        var list = '';
+        for(var i=0; i<listOfIngredients.length; i++) {
+            list += listOfIngredients[i].description
+            if(i != listOfIngredients.length-1) list += ", ";
+        }
+        return list;
     }
 
 };
