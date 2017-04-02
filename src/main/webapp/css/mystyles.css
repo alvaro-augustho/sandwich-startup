@@ -75,3 +75,7 @@ body {
   position: absolute;
   right: 0px;
 }
+
+.hamburguer-description {
+  text-transform: capitalize;
+}

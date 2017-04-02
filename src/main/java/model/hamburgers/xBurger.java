@@ -20,4 +20,12 @@ public class xBurger extends Hamburger {
             new HamburguerCarne(), new Queijo()
     };
 
+    @SerializedName("price")
+    private float price = 4.5f;
+
+    @Override
+    public float getPrice() {
+        return this.price;
+    }
+
 }

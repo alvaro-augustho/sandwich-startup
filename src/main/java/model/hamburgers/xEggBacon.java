@@ -21,4 +21,14 @@ public class xEggBacon extends Hamburger {
             new Ovo(), new Bacon(), new HamburguerCarne(), new Queijo()
     };
 
+    @SerializedName("price")
+    private float price = 7.3f;
+
+    @Override
+    public float getPrice() {
+        return this.price;
+    }
+
+
+
 }
